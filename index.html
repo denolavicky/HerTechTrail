@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table and Forms</title>
+</head>
+
+<body>
+    <table>
+        <caption style="font-style: italic;">A test table with merged cells</caption>
+        <tr>
+            <th rowspan="2"> </th>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red eyes</th>
+        </tr>
+
+        <tr>
+            <th>height</th>
+            <th>weight</th>
+        </tr>
+
+        <tr>
+            <th>Males</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+
+        <tr>
+            <th>Females</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+
+    <br><br><br><br>
+
+    <fieldset>
+        <legend>Your address</legend>
+        <form action="/action_page.php" target="_blank">
+            <div>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname"><br><br>
+            </div>
+
+            <div>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+
+            <div>
+                <label for="strt">Street</label>
+                <input type="text" id="strt" name="strt"><br><br>
+            </div>
+
+            <div>
+                <label for="ct">City</label>
+                <input type="text" id="ct" name="ct"><br><br>
+            </div>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Additional details</legend>
+        <div>
+            <label for="message">Biography</label>
+            <textarea name="message " id="message" cols="15" rows="5"></textarea><br><br><br>
+        </div>
+
+        <div>
+            <label for="img">Image</label>
+            <!--<input type="image">-->
+            <label for="file"></label>
+            <input type="file" id="file"><br><br><br>
+        </div>
+
+        <div>
+            <label for="agerange">Age Group</label>
+            <select name="agerange" id="agerange"><br><br><br>
+                <option value="0-9years">0-9years</option>
+                <option value="10-19years">10-19years</option>
+                <option value="20-29years">20-29years</option>
+                <option value="30-39years">30-39years</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Interests</legend>
+        <div>
+            <label for="hb">Hobbies</label>
+            <input type="text" id="hb" name="hb"><br><br>
+        </div>
+
+        <div>
+            <label for="favcar">Favourite Car?</label>
+            <select name="favcar" id="favcar">
+                <option value="volvo">volvo</option>
+                <option value="mercerdes">Mercerdes</option>
+                <option value="honda">Honda</option>
+                <option value="toyota">Toyota</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="favtp">Favourite public transport?</label>
+            <select name="favtp" id="favtp" style="margin-top: 40px; margin-bottom: 40px;">
+                <optgroup label="Ground">
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                </optgroup>
+
+                <optgroup label="Water">
+                    <option value="bottled">Bottled</option>
+                    <option value="satchet">Satchet</option>
+                </optgroup>
+            </select>
+        </div>
+    </fieldset>
+
+
+
+
+    </form>
+
+</body>
+
+</html>
